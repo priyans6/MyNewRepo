@@ -1,0 +1,49 @@
+16:45:02,540  INFO LuksRestClient:59 - args 2
+16:45:02,552  INFO LuksRestClient:71 - Inserting file=/opt/ibm/.luks-escrow/20BUS0QT0APC050WB806359Q744.xml
+16:45:02,607  INFO Jaxb2Marshaller:365 - Creating JAXBContext with classes to be bound [class com.ibm.sit.keyservice.domain.OpenClient,class com.ibm.sit.keyservice.domain.Machine,class com.ibm.sit.keyservice.domain.Drive,class com.ibm.sit.keyservice.domain.Partition,class com.ibm.sit.keyservice.domain.Password,class com.ibm.sit.keyservice.domain.User]
+16:45:02,988  INFO LuksRestClient:80 - * Machine *
+********  MACHINE  ********
+ID=20BUS0QT0APC050WB806359Q744
+MAKE=20BU
+MODEL=S0QT0A
+SERIAL=PC050WB8
+EMP_SN=06359Q744
+USER_TYPE=Primary Workstation
+TOTAL_DRIVES=1
+
+* DRIVE *
+ID=THNSFJ256GCSU35RS11J3T8LW
+MACHINE_ID=20BUS0QT0APC050WB806359Q744
+MAKE=TOSHIBA
+MODEL=THNSFJ256GCSU
+SERIAL=35RS11J3T8LW
+TOTAL PARTITIONS=1
+
+* PARTITION *
+ID=a94f709b-775e-4fd1-ae6c-7a2a2d7c6cdb
+DRIVE_ID=THNSFJ256GCSU35RS11J3T8LW
+UNIT_IDENTIFIER=UNIT-a94f709b-775e-4fd1-ae6c-7a2a2d7c6cdb
+ACTIVE=true
+
+
+********  MACHINE  ********
+
+16:45:02,989  INFO OpenClientService:70 - com.ibm.sit.keyservice.domain.OpenClient@48cf768c
+16:45:02,989  INFO OpenClientService:71 - Inserting open client - MID=20BUS0QT0APC050WB806359Q744
+16:45:03,016  INFO OpenClientService:74 - URL - http://106.w3cloud.ibm.com/tools/ers/rest/luks.html
+16:45:03,017  INFO Jaxb2Marshaller:365 - Creating JAXBContext with classes to be bound [class com.ibm.sit.keyservice.domain.OpenClient,class com.ibm.sit.keyservice.domain.Drive,class com.ibm.sit.keyservice.domain.Drive,class com.ibm.sit.keyservice.domain.Partition,class com.ibm.sit.keyservice.domain.Password,class com.ibm.sit.keyservice.domain.Drive,class com.ibm.sit.keyservice.domain.User]
+16:45:03,117  INFO OpenClientService:86 - Content-Type: text/plain; charset=UTF-8
+16:45:03,117  INFO OpenClientService:87 - 1048346
+16:45:03,123  INFO OpenClientService:88 - UTF-8
+16:45:03,125  INFO OpenClientService:89 - 1048346
+16:45:07,644  INFO OpenClientService:112 - <luks><status>200</status><message>SUCCESS</message></luks>
+
+16:45:07,644  INFO LuksRestClient:83 - * Response *
+<luks><status>200</status><message>SUCCESS</message></luks>
+
+16:45:07,646  INFO LuksRestClient:89 - response written to /root/REGISTER-RESPONSE-1549278907645.txt
+16:45:07,647  INFO LuksRestClient:90 - OpenClient 20BUS0QT0APC050WB806359Q744 registered.
+16:45:07,647  INFO LuksRestClient:191 - Total execution time= 5108
+seconds=5.0
+minutes=0.0
+hours=0.0
